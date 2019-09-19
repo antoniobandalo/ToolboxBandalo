@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ToolboxBandalo</string>
+    <string name="header">Enter to win a free vacation!</string>
+    <string name="name">Name:</string>
+    <string name="nameExample">Ex: John doe</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="phoneNumExample">Ex: 1(234)567-8910</string>
+    <string name="email">Email:</string>
+    <string name="userEmail">Ex: qwerty@gmail.com</string>
+    <string name="customButton">Continue</string>
+    <string name="switchHeader">Choose your destination</string>
 </resources>
