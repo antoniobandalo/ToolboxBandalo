@@ -3,4 +3,6 @@
     <dimen name="titleFromTop">36dp</dimen>
     <dimen name="textSize">24sp</dimen>
     <dimen name="textBoxWidth">250dp</dimen>
+    <dimen name="buttonWidth">100dp</dimen>
+    <dimen name="buttonHeight">50dp</dimen>
 </resources>

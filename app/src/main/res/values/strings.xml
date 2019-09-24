@@ -9,4 +9,13 @@
     <string name="userEmail">Ex: qwerty@gmail.com</string>
     <string name="customButton">Continue</string>
     <string name="switchHeader">Choose your destination</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="radioButton">I have read and agree to the terms of service.</string>
+    <string-array name="numArray">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
 </resources>

@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/header"
@@ -29,17 +30,17 @@
         android:layout_width="@dimen/textBoxWidth"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="47dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="524dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/cinzel_bold"
         android:gravity="center"
         android:text="@string/name"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/userName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/header"
         app:layout_constraintTop_toBottomOf="@+id/header" />
 
     <EditText
@@ -49,13 +50,14 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="470dp"
+        android:layout_marginBottom="25dp"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/nameExample"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/phoneNum"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
 
@@ -66,12 +68,12 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="412dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/cinzel_bold"
         android:gravity="center"
         android:text="@string/phoneNumber"
         android:textSize="@dimen/textSize"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/UserPhoneNum"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userName" />
@@ -83,12 +85,12 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="346dp"
+        android:layout_marginBottom="25dp"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/phoneNumExample"
         android:inputType="phone"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phoneNum" />
@@ -107,10 +109,9 @@
         android:textSize="@dimen/textSize"
         app:layout_constraintBottom_toTopOf="@+id/userEmail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/UserPhoneNum"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintTop_toBottomOf="@+id/UserPhoneNum" />
 
     <EditText
         android:id="@+id/userEmail"
@@ -119,32 +120,32 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="224dp"
+        android:layout_marginBottom="60dp"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/userEmail"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email" />
 
-    <Button
-        android:id="@+id/customButton"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="162dp"
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_marginStart="154dp"
         android:layout_marginTop="60dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="121dp"
-        android:background="@drawable/custom_button"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="111dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
         android:onClick="clickMe"
-        android:text="@string/customButton"
-        android:textColor="#000000"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/userEmail"
+        app:srcCompat="@drawable/arrowimage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
